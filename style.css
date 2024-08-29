@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Linkedin Shayan Shah */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", system-ui;
+  display: flex;
+  margin: auto;
+  padding: 30px 8%;
+  justify-content: space-around;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(228, 122, 38, 255),
+    rgba(250, 180, 7, 255)
+  );
+  border-bottom: 4px solid black;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  align-items: center;
+  animation: log 1s ease forwards;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+}
+
+.navlinks li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 0 30px;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navlinks li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #fff;
+  top: 30px;
+  left: 0;
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+.navlinks li a:hover::after {
+  width: 70%;
+}
+
+.navlinks li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navlinks li button:hover {
+  background: rgb(236, 39, 127);
+  color: #fff;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 10%;
+}
+
+.contentdetails img {
+  margin-top: 53px;
+  width: 24%;
+  animation: main 1s ease forwards;
+}
+
+.contenttext {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+.contenttext h2 {
+  font-size: 60px;
+  font-family: "Freeman", sans-serif;
+}
+
+.contenttext h3 {
+  font-family: "Freehand", cursive;
+  font-size: 28px;
+}
+
+.contenttext p {
+  max-width: 700px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contenttext .email {
+  padding: 8px 10px;
+  font-weight: 600;
+  outline: none;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contenttext .email:hover {
+  scale: 1.1;
+}
+
+.email i {
+  font-size: 14px;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.contenttext span {
+  margin-left: 10px;
+  font-size: 15px;
+  align-items: center;
+  font-weight: 500;
+  display: inline-flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contenttext span:hover {
+  transform: translateX(20px);
+}
+
+.contenttext span i {
+  color: red;
+  align-items: center;
+  font-size: 25px;
+  margin-left: 4px;
+  font-family: "Freeman", sans-serif;
+}
+
+.section2 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(225, 123, 23), rgb(236, 39, 127));
+}
+.section2 h1 {
+  position: absolute;
+  left: 35%;
+  margin-top: 40px;
+  font-size: 50px;
+  font-family: "Freeman", sans-serif;
+}
+
+.section2 h1::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #fff;
+  top: 65px;
+  left: 90px;
+  border-radius: 10px;
+}
+
+.section2 h1 span {
+  color: #fff;
+}
+
+.section2 img {
+  position: absolute;
+  width: 60%;
+  right: 4%;
+  margin-top: 5%;
+}
+
+.market-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16%;
+  margin-left: 10%;
+}
+
+.market-links h3 {
+  font-size: 50px;
+  font-family: "Freeman", sans-serif;
+  color: black;
+  background: rgba(250, 180, 7, 255);
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.market-links a {
+  position: relative;
+  margin-top: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.market-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background: rgba(250, 180, 7, 255);
+  top: 30px;
+  left: 17px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.market-links a:hover::after {
+  width: 50%;
+}
+
+.market-links .btns {
+  position: absolute;
+  display: inline-flex;
+  margin-top: 83%;
+  margin-left: 8%;
+  padding: 8px 40px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.btns:hover {
+  scale: 1.1;
+}
+
+.btns i {
+  margin-left: 4px;
+  font-size: 15px;
+  align-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes log {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
